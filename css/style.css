@@ -687,3 +687,47 @@ ul.quick-links li a::before{
     border-bottom: 1px solid #ddd;
     z-index: 999999;
 }
+
+/*Product image hover editing*/
+
+/*
+.product-img img {
+    width: 100%;
+}
+
+.product-img {
+    position: relative;
+}
+
+.second-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .3s;
+}
+
+.product-img:hover .second-img {
+    opacity: 1;
+}*/
+
+
+.product-img img {
+    width: 100%;
+}
+
+.product-img {
+    position: relative; overflow: hidden;
+}
+
+.second-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .8s;
+    transform: translateX(-100%)
+}
+
+.product-img:hover .second-img {
+    transform: translateX(0)
+}
